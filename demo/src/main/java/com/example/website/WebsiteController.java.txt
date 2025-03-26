@@ -10,4 +10,6 @@ public class WebsiteController {
     public String homepage() {
         return "Welcome to the Dynamic Website!";
     }
+
+
 }
