@@ -1,11 +1,9 @@
 pipeline {
     agent any
 
-    triggers {
-        // Optional: trigger by polling
-        // pollSCM('H/5 * * * *') 
+  triggers {
+        pollSCM('H/5 * * * *') // Check for changes every 5 minutes
     }
-
     stages {
         stage('Build') {
             steps {
