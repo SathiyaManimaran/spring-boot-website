@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave3' }
 
   triggers {
         pollSCM('H/5 * * * *') // Check for changes every 5 minutes
